@@ -10,12 +10,12 @@ FROM node:22-alpine AS base
 WORKDIR /app
 
 # Install dependencies
-COPY package.json package-lock.json* ./
-RUN npm ci --production=false
+COPY server/package.json server/package-lock.json* server/
+RUN cd server && npm ci --production=false
 
 # Copy source
-COPY src/ src/
-COPY tsconfig.json ./
+COPY server/src/ server/src/
+COPY server/tsconfig.json server/
 
 # Build (if using tsc)
 # RUN npx tsc
@@ -25,4 +25,4 @@ EXPOSE 3001
 ENV WS_PORT=3001
 ENV NODE_ENV=production
 
-CMD ["npx", "tsx", "src/ws/standalone.ts"]
+CMD ["sh", "-c", "cd server && npx tsx src/ws/standalone.ts"]

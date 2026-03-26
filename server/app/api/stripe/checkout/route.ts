@@ -18,7 +18,7 @@ export async function POST(req: NextRequest): Promise<NextResponse> {
       return NextResponse.json({ error: 'Invalid token' }, { status: 401 });
     }
 
-    const { price_id, success_url, cancel_url } = await req.json();
+    const { price_id, success_url, cancel_url } = await req.json() as any;
 
     // Validate price ID
     const validPrices = Object.values(STRIPE_CONFIG.prices);

@@ -16,7 +16,7 @@
       "env": {
         "EXPO_PUBLIC_SUPABASE_URL": "https://htykdntnwzobolnqqdul.supabase.co",
         "EXPO_PUBLIC_SUPABASE_ANON_KEY": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Imh0eWtkbnRud3pvYm9sbnFxZHVsIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzQ1NTcxNzgsImV4cCI6MjA5MDEzMzE3OH0.T3ySZ1sd0uo2IHIKfA-XaUJsOG_ejAiVbSoqsU_NqW8",
-        "EXPO_PUBLIC_API_URL": "https://translate-r-api.vercel.app"
+        "EXPO_PUBLIC_API_URL": "https://server-steel-kappa.vercel.app"
       }
     },
     "preview": {
@@ -27,7 +27,7 @@
       "env": {
         "EXPO_PUBLIC_SUPABASE_URL": "https://htykdntnwzobolnqqdul.supabase.co",
         "EXPO_PUBLIC_SUPABASE_ANON_KEY": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Imh0eWtkbnRud3pvYm9sbnFxZHVsIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzQ1NTcxNzgsImV4cCI6MjA5MDEzMzE3OH0.T3ySZ1sd0uo2IHIKfA-XaUJsOG_ejAiVbSoqsU_NqW8",
-        "EXPO_PUBLIC_API_URL": "https://translate-r-api.vercel.app"
+        "EXPO_PUBLIC_API_URL": "https://server-steel-kappa.vercel.app"
       }
     },
     "production": {
@@ -38,7 +38,7 @@
       "env": {
         "EXPO_PUBLIC_SUPABASE_URL": "https://htykdntnwzobolnqqdul.supabase.co",
         "EXPO_PUBLIC_SUPABASE_ANON_KEY": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Imh0eWtkbnRud3pvYm9sbnFxZHVsIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzQ1NTcxNzgsImV4cCI6MjA5MDEzMzE3OH0.T3ySZ1sd0uo2IHIKfA-XaUJsOG_ejAiVbSoqsU_NqW8",
-        "EXPO_PUBLIC_API_URL": "https://translate-r-api.vercel.app"
+        "EXPO_PUBLIC_API_URL": "https://server-steel-kappa.vercel.app"
       }
     }
   },

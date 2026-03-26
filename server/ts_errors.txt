@@ -1,0 +1,15 @@
+﻿app/api/stripe/checkout/route.ts(21,13): error TS2339: Property 'price_id' does not exist on type 'unknown'.
+app/api/stripe/checkout/route.ts(21,23): error TS2339: Property 'success_url' does not exist on type 'unknown'.
+app/api/stripe/checkout/route.ts(21,36): error TS2339: Property 'cancel_url' does not exist on type 'unknown'.
+app/api/stripe/portal/route.ts(21,13): error TS2339: Property 'return_url' does not exist on type 'unknown'.
+src/lib/daily.ts(50,3): error TS2322: Type 'unknown' is not assignable to type 'DailyRoom'.
+src/lib/daily.ts(87,9): error TS2322: Type 'unknown' is not assignable to type 'DailyMeetingToken'.
+src/routes/calls.ts(28,11): error TS2322: Type 'unknown' is not assignable to type 'CreateCallRequest'.
+src/routes/calls.ts(109,13): error TS2339: Property 'call_id' does not exist on type 'unknown'.
+src/routes/calls.ts(178,13): error TS2339: Property 'call_id' does not exist on type 'unknown'.
+src/routes/utterances.ts(37,11): error TS2322: Type 'unknown' is not assignable to type 'CreateUtteranceRequest'.
+src/services/DeepgramSTTService.ts(147,26): error TS2345: Argument of type 'Buffer<ArrayBufferLike>' is not assignable to parameter of type 'SocketDataLike'.
+  Type 'Buffer<ArrayBufferLike>' is not assignable to type 'ArrayBuffer | SharedArrayBuffer | Blob'.
+    Type 'Buffer<ArrayBufferLike>' is not assignable to type 'SharedArrayBuffer'.
+      The types of 'slice(...)[Symbol.toStringTag]' are incompatible between these types.
+        Type '"Uint8Array"' is not assignable to type '"SharedArrayBuffer"'.

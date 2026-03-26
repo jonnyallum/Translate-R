@@ -34,7 +34,7 @@ export async function createUtterance(req: NextRequest): Promise<NextResponse> {
       return NextResponse.json({ error: 'Invalid token' }, { status: 401 });
     }
 
-    const body: CreateUtteranceRequest = await req.json();
+    const body = (await req.json()) as CreateUtteranceRequest;
     const {
       call_id,
       source_transcript_raw,

@@ -47,7 +47,7 @@ export async function createDailyRoom(roomName: string): Promise<DailyRoom> {
     throw new Error(`Failed to create Daily room: ${error}`);
   }
 
-  return response.json();
+  return (await response.json()) as DailyRoom;
 }
 
 /**
@@ -84,7 +84,7 @@ export async function createDailyToken(
     throw new Error(`Failed to create Daily token: ${error}`);
   }
 
-  const data: DailyMeetingToken = await response.json();
+  const data = (await response.json()) as DailyMeetingToken;
   return data.token;
 }
 

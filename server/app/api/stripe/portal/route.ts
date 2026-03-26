@@ -18,7 +18,7 @@ export async function POST(req: NextRequest): Promise<NextResponse> {
       return NextResponse.json({ error: 'Invalid token' }, { status: 401 });
     }
 
-    const { return_url } = await req.json().catch(() => ({}));
+    const { return_url } = (await req.json().catch(() => ({}))) as any;
 
     const portalUrl = await createPortalSession(
       user.id,

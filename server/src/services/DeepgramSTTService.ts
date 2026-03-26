@@ -144,7 +144,7 @@ class DeepgramSTTSession implements STTSession {
       console.warn(`[Deepgram] Attempted to send audio to inactive session ${this.sessionId}`);
       return;
     }
-    this.connection.send(chunk);
+    this.connection.send((chunk as unknown) as ArrayBuffer);
   }
 
   onResult(callback: (result: STTResult) => void): void {

@@ -25,7 +25,7 @@ export async function createCall(req: NextRequest): Promise<NextResponse> {
       return NextResponse.json({ error: 'Invalid token' }, { status: 401 });
     }
 
-    const body: CreateCallRequest = await req.json();
+    const body = (await req.json()) as CreateCallRequest;
     const { contact_user_id } = body;
 
     // Get both users' profiles for language info
@@ -106,7 +106,7 @@ export async function joinCall(req: NextRequest): Promise<NextResponse> {
       return NextResponse.json({ error: 'Invalid token' }, { status: 401 });
     }
 
-    const { call_id } = await req.json();
+    const { call_id } = (await req.json()) as { call_id: string };
 
     // Get the call
     const { data: call, error: callError } = await supabaseAdmin
@@ -175,7 +175,7 @@ export async function endCall(req: NextRequest): Promise<NextResponse> {
       return NextResponse.json({ error: 'Invalid token' }, { status: 401 });
     }
 
-    const { call_id } = await req.json();
+    const { call_id } = (await req.json()) as { call_id: string };
 
     const { data: call } = await supabaseAdmin
       .from('calls')
