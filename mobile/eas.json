@@ -1,0 +1,58 @@
+{
+  "cli": {
+    "version": ">= 12.0.0",
+    "appVersionSource": "local"
+  },
+  "build": {
+    "development": {
+      "developmentClient": true,
+      "distribution": "internal",
+      "ios": {
+        "simulator": true
+      },
+      "android": {
+        "buildType": "apk"
+      },
+      "env": {
+        "EXPO_PUBLIC_SUPABASE_URL": "https://htykdntnwzobolnqqdul.supabase.co",
+        "EXPO_PUBLIC_SUPABASE_ANON_KEY": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Imh0eWtkbnRud3pvYm9sbnFxZHVsIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzQ1NTcxNzgsImV4cCI6MjA5MDEzMzE3OH0.T3ySZ1sd0uo2IHIKfA-XaUJsOG_ejAiVbSoqsU_NqW8",
+        "EXPO_PUBLIC_API_URL": "https://translate-r-api.vercel.app"
+      }
+    },
+    "preview": {
+      "distribution": "internal",
+      "ios": {
+        "resourceClass": "m-medium"
+      },
+      "env": {
+        "EXPO_PUBLIC_SUPABASE_URL": "https://htykdntnwzobolnqqdul.supabase.co",
+        "EXPO_PUBLIC_SUPABASE_ANON_KEY": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Imh0eWtkbnRud3pvYm9sbnFxZHVsIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzQ1NTcxNzgsImV4cCI6MjA5MDEzMzE3OH0.T3ySZ1sd0uo2IHIKfA-XaUJsOG_ejAiVbSoqsU_NqW8",
+        "EXPO_PUBLIC_API_URL": "https://translate-r-api.vercel.app"
+      }
+    },
+    "production": {
+      "autoIncrement": true,
+      "ios": {
+        "resourceClass": "m-medium"
+      },
+      "env": {
+        "EXPO_PUBLIC_SUPABASE_URL": "https://htykdntnwzobolnqqdul.supabase.co",
+        "EXPO_PUBLIC_SUPABASE_ANON_KEY": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Imh0eWtkbnRud3pvYm9sbnFxZHVsIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzQ1NTcxNzgsImV4cCI6MjA5MDEzMzE3OH0.T3ySZ1sd0uo2IHIKfA-XaUJsOG_ejAiVbSoqsU_NqW8",
+        "EXPO_PUBLIC_API_URL": "https://translate-r-api.vercel.app"
+      }
+    }
+  },
+  "submit": {
+    "production": {
+      "ios": {
+        "appleId": "your-apple-id@email.com",
+        "ascAppId": "your-asc-app-id",
+        "appleTeamId": "YOUR_TEAM_ID"
+      },
+      "android": {
+        "serviceAccountKeyPath": "./google-services.json",
+        "track": "internal"
+      }
+    }
+  }
+}

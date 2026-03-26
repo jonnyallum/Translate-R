@@ -1,0 +1,14 @@
+[build]
+builder = "dockerfile"
+dockerfilePath = "Dockerfile.ws"
+
+[deploy]
+startCommand = "npx tsx src/ws/standalone.ts"
+healthcheckPath = "/health"
+healthcheckTimeout = 10
+restartPolicyType = "on_failure"
+restartPolicyMaxRetries = 3
+
+[[services]]
+name = "translate-r-ws"
+internalPort = 3001
